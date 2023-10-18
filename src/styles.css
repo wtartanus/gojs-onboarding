@@ -1,0 +1,41 @@
+body,
+header,
+header h2 {
+    margin: unset;
+}
+
+header {
+    height: 10vh;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+#content {
+    height: 90vh;
+    display: grid; 
+    grid-template-columns: 0.4fr 2.2fr 0.4fr; 
+    grid-template-rows: 0.1fr 1.9fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "palette nav settings"
+      "palette diagram settings"; 
+}
+
+#palette { 
+    grid-area: palette;
+}
+
+nav { 
+    grid-area: nav; 
+}
+
+#diagram { 
+    grid-area: diagram; 
+}
+
+#settings { 
+    grid-area: settings; 
+}
