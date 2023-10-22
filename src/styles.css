@@ -39,3 +39,22 @@ nav {
 #settings { 
     grid-area: settings; 
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+form legend {
+    margin-bottom: 1rem;
+}
+
+form input,
+form select {
+    margin-bottom: .5rem;
+}
+
+form label {
+    margin-bottom: .2rem;
+}

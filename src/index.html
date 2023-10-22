@@ -13,8 +13,24 @@
             <nav>Nav</nav>
             <div id="diagram">Diagram</div>
             <div id="settings">
-                <form>
+                <form id="settingsForm">
                     <legend>Object Properties</legend>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text">
+
+                    <label for="type">Type</label>
+                    <select id="type" name="type">
+                        <option value="roundedRectangle">Rounded Rectangle</option>
+                        <option value="rectangle">Rectangle</option>
+                        <option value="triangle">Triangle</option>
+                    </select>
+
+                    <label for="color">Color</label>
+                    <select id="color" name="color">
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                    </select>
                 </form>
             </div>
         </section>

@@ -22,13 +22,15 @@ export const createDiagramRoundedRectangleNodeTemplate = () => $(
                 name: 'RoundedRectangle',
             },
             new go.Binding('width', 'width').makeTwoWay(),
-            new go.Binding('height', 'height').makeTwoWay()
+            new go.Binding('height', 'height').makeTwoWay(),
+            new go.Binding('fill', 'color')
         ),
         $(
             go.TextBlock,
             {
                 text: 'GREEN'
-            }
+            },
+            new go.Binding('text', 'text')
         )
     )
 );
@@ -51,13 +53,15 @@ export const createDiagramRectangleNodeTemplate = () => $(
                 fill: '#11447a',
                 desiredSize: new go.Size(100, 100),
                 name: 'Rectangle'
-            }
+            },
+            new go.Binding('fill', 'color')
         ),
         $(
             go.TextBlock,
             {
                 text: 'BLUE'
-            }
+            },
+            new go.Binding('text', 'text')
         )
     )
 );
@@ -80,13 +84,15 @@ export const createDiagramTriangleNodeTemplate = () => $(
                 fill: '#bd2839',
                 desiredSize: new go.Size(100, 100),
                 name: 'Triangle'
-            }
+            },
+            new go.Binding('fill', 'color')
         ),
         $(
             go.TextBlock,
             {
                 text: 'RED'
-            }
+            },
+            new go.Binding('text', 'text')
         )
     )
 );

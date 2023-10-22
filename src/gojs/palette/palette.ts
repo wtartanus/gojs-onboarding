@@ -23,9 +23,9 @@ export const createPalette = (paletteDiv: HTMLDivElement) => {
     ]);
 
     palette.model.nodeDataArray = [
-        { category: 'roundedRectangle' },
-        { category: 'rectangle' },
-        { category: 'triangle' },
+        { category: 'roundedRectangle', text: 'green', color: 'green' },
+        { category: 'rectangle', text: 'blue', color: 'blue' },
+        { category: 'triangle', text: 'red', color: 'red' },
         { category: 'groupNode', isGroup: true }
     ];
 
