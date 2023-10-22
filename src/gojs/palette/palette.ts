@@ -16,6 +16,9 @@ export const createPalette = (paletteDiv: HTMLDivElement) => {
         { key: 'roundedRectangle', value: createPaletteRoundedRectangleNodeTemplate() },
         { key: 'rectangle', value: createPaletteRectangleNodeTemplate() },
         { key: 'triangle', value: createPaletteTriangleNodeTemplate() },
+    ]);
+
+    palette.groupTemplateMap = new go.Map([
         { key: 'groupNode', value: createPaletteGroupNodeTemplate() }
     ]);
 
@@ -23,7 +26,7 @@ export const createPalette = (paletteDiv: HTMLDivElement) => {
         { category: 'roundedRectangle' },
         { category: 'rectangle' },
         { category: 'triangle' },
-        { category: 'groupNode' }
+        { category: 'groupNode', isGroup: true }
     ];
 
     palette.padding = 20;

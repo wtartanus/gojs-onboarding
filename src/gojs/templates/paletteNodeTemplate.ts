@@ -7,6 +7,9 @@ export const createPaletteRoundedRectangleNodeTemplate = () => $(
     $(
         go.Panel,
         go.Panel.Auto,
+        {
+            
+        },
         $(
             go.Shape,
             'RoundedRectangle',
@@ -69,7 +72,10 @@ export const createPaletteTriangleNodeTemplate = () => $(
 );
 
 export const createPaletteGroupNodeTemplate = () => $(
-    go.Node,
+    go.Group,
+    {
+        isSubGraphExpanded: true
+    },
     $(
         go.Panel,
         go.Panel.Vertical,
@@ -79,7 +85,7 @@ export const createPaletteGroupNodeTemplate = () => $(
             {
                 fill: '#c8c9cc',
                 desiredSize: new go.Size(100, 100)
-            }
+            },
         ),
         $(
             go.TextBlock,
