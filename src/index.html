@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Diagramming App</title>
+        <script src="https://kit.fontawesome.com/1ba3136685.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -10,7 +11,17 @@
         </header>
         <section id="content">
             <div id="palette">Palette</div>
-            <nav>Nav</nav>
+            <nav>
+                <ul>
+                    <li><i id="save" class="fa-regular fa-floppy-disk"></i></li>
+                    <li><i id="load" class="fa-regular fa-file"></i></li>
+                    <li><i id="saveImage" class="fa-regular fa-file-image"></i></li>
+                    <li><i id="undo" class="fa-solid fa-arrow-left"></i></li>
+                    <li><i id="redo" class="fa-solid fa-arrow-right"></i></li>
+                    <li><i id="zoomIn" class="fa-solid fa-magnifying-glass-plus"></i></li>
+                    <li><i id="zoomOut" class="fa-solid fa-magnifying-glass-minus"></i></li>
+                </ul>
+            </nav>
             <div id="diagram">Diagram</div>
             <div id="settings">
                 <form id="settingsForm">
@@ -20,6 +31,7 @@
 
                     <label for="type">Type</label>
                     <select id="type" name="type">
+                        <option value="" selected></option>
                         <option value="roundedRectangle">Rounded Rectangle</option>
                         <option value="rectangle">Rectangle</option>
                         <option value="triangle">Triangle</option>
@@ -27,11 +39,13 @@
 
                     <label for="color">Color</label>
                     <select id="color" name="color">
+                        <option value="" selected></option>
                         <option value="blue">Blue</option>
                         <option value="red">Red</option>
                         <option value="green">Green</option>
                     </select>
                 </form>
+                <section id="overview"></section>
             </div>
         </section>
     </body>

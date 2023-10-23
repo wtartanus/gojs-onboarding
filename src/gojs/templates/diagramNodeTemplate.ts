@@ -101,7 +101,7 @@ export const createDiagramGroupNodeTemplate = () => $(
     go.Group,
     {
         resizable: true,
-        resizeObjectName: 'GroupNode'
+        resizeObjectName: 'GroupNode',
     },
     $(
         go.Panel,

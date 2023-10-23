@@ -32,6 +32,11 @@ export const createDiagram = (diagramDiv: HTMLDivElement) => {
     diagram.toolManager.relinkingTool.linkValidation = canLinkNodes;
 
     (window as any).goJsDiagram = diagram;
+
+    $(go.Overview, "overview", {
+        observed: diagram,
+        contentAlignment: go.Spot.Center,
+    });
     
     return diagram;
 }

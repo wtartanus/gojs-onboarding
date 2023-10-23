@@ -58,3 +58,19 @@ form select {
 form label {
     margin-bottom: .2rem;
 }
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+#overview {
+    width: 100%;
+    height: 200px;
+}
